@@ -28,7 +28,7 @@ const About: React.FC<Props> = ({ lang }) => {
             <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div>
                      <img 
-                        src="https://picsum.photos/id/1015/800/600" 
+                        src="https://hewer.iq/wp-content/uploads/2025/01/6.png" 
                         alt="Our Story" 
                         className="rounded-lg shadow-2xl object-cover"
                      />
