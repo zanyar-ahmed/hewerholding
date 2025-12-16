@@ -31,7 +31,7 @@ export const HOME_CONTENT: HomeContent = {
       ku: 'گروپی هێوەر هۆڵدینگ | پێشەنگی وەبەرهێنانی پیشەسازی و وزە لە عێراق'
     },
     description: {
-      en: 'Hewer Holding Group drives excellence in Agriculture, Oil & Gas, and Energy. Parent company of LASS, HEWER Oil Services, OPTIMUM Drilling, and XEED.',
+      en: 'Hewer Holding Group drives excellence in Agriculture, Oil & Gas, and Energy. Parent company of LASS, HEWER Oil Services, OPTIMUM Drilling Services, and XEED.',
       ar: 'تقود مجموعة هيوَر القابضة التميز في الزراعة والنفط والغاز والطاقة. الشركة الأم لشركات لاس، هيوَر للخدمات النفطية، أوبتيموم للحفر، وإكسيد.',
       ku: 'گروپی هێوەر هۆڵدینگ باڵایی لە کشتوکاڵ، نەوت و گاز و وزە بەڕێوەدەبات. کۆمپانیای دایکی لاس، خزمەتگوزاری نەوتی هێوەر، هەڵکۆڵینی ئۆپتیمەم و ئێکسید.'
     },
@@ -148,7 +148,7 @@ export const COMPANIES_PAGE_CONTENT: CompaniesPageContent = {
       ku: 'کۆمپانیاکانمان | لاس، هێوەر بۆ نەوت، ئۆپتیمەم، ئێکسید'
     },
     description: {
-      en: 'Explore the Hewer Holding portfolio: LASS Industrial Investment, HEWER Oil Services, OPTIMUM Drilling, and XEED Energy Solutions.',
+      en: 'Explore the Hewer Holding portfolio: LASS Industrial Investment, HEWER Oil Services, OPTIMUM Drilling Services, and XEED Energy Solutions.',
       ar: 'اكتشف محفظة مجموعة هيوَر: لاس للاستثمار الصناعي، هيوَر للخدمات النفطية، أوبتيموم للحفر، وإكسيد لحلول الطاقة.',
       ku: 'پۆرتفۆلیۆی هێوەر هۆڵدینگ ببینە: وەبەرهێنانی پیشەسازی لاس، خزمەتگوزاری نەوتی هێوەر، هەڵکۆڵینی ئۆپتیمەم، و چارەسەری وزەی ئێکسید.'
     },
@@ -376,7 +376,7 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
   optimum: {
     id: 'optimum',
     name: {
-      en: 'OPTIMUM Drilling',
+      en: 'OPTIMUM Drilling Services',
       ar: 'أوبتيموم للحفر',
       ku: 'ئۆپتیمەم بۆ هەڵکۆڵین',
     },
@@ -385,12 +385,12 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
     heroImage: 'https://hewer.iq/wp-content/uploads/2025/12/ChatGPT-Image-Dec-16-2025-08_03_01-PM.png',
     meta: {
       title: {
-        en: 'OPTIMUM Drilling | Advanced Drilling Solutions Iraq',
+        en: 'OPTIMUM Drilling Services | Advanced Drilling Solutions Iraq',
         ar: 'أوبتيموم للحفر | حلول حفر متقدمة في العراق',
         ku: 'ئۆپتیمەم بۆ هەڵکۆڵین | چارەسەری هەڵکۆڵینی پێشکەوتوو لە عێراق'
       },
       description: {
-        en: 'OPTIMUM Drilling provides state-of-the-art drilling and workover rigs, ensuring operational efficiency and safety in Iraq’s oil fields.',
+        en: 'OPTIMUM Drilling Services provides state-of-the-art drilling and workover rigs, ensuring operational efficiency and safety in Iraq’s oil fields.',
         ar: 'توفر أوبتيموم للحفر أجهزة حفر وصيانة متطورة، مما يضمن الكفاءة التشغيلية والسلامة في حقول النفط في العراق.',
         ku: 'ئۆپتیمەم بۆ هەڵکۆڵین ئامێری هەڵکۆڵین و چاککردنەوەی پێشکەوتوو دابین دەکات، بۆ مسۆگەرکردنی کارایی و سەلامەتی لە کێڵگە نەوتییەکانی عێراق.'
       },
@@ -401,7 +401,7 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
       }
     },
     description: {
-      en: 'OPTIMUM Drilling is a leading provider of drilling and workover services in Iraq. We utilize modern fleets and adhere to strict safety protocols to deliver projects on time and within budget. Our strategic alliance with HEWER Oil Services allows us to offer comprehensive turnkey solutions.',
+      en: 'OPTIMUM Drilling Services is a leading provider of drilling and workover services in Iraq. We utilize modern fleets and adhere to strict safety protocols to deliver projects on time and within budget. Our strategic alliance with HEWER Oil Services allows us to offer comprehensive turnkey solutions.',
       ar: 'تعد أوبتيموم للحفر مزوداً رائداً لخدمات الحفر وصيانة الآبار في العراق. نحن نستخدم أساطيل حديثة ونلتزم ببروتوكولات سلامة صارمة لتسليم المشاريع في الوقت المحدد وضمن الميزانية. تحالفنا الاستراتيجي مع HEWER يسمح لنا بتقديم حلول شاملة.',
       ku: 'ئۆپتیمەم بۆ هەڵکۆڵین دابینکەری پێشەنگی خزمەتگوزاری هەڵکۆڵین و چاککردنەوەیە لە عێراق. ئێمە کەشتیگەلی مۆدێرن بەکاردەهێنین و پابەندین بە پرۆتۆکۆڵە توندەکانی سەلامەتی بۆ جێبەجێکردنی پڕۆژەکان لە کاتی خۆیدا. هاوپەیمانی ستراتیژیمان لەگەڵ HEWER ڕێگەمان دەدات چارەسەری گشتگیر پێشکەش بکەین.',
     },
