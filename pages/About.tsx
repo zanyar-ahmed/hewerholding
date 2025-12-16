@@ -1,17 +1,20 @@
 import React from 'react';
 import { Language } from '../types';
 import { ABOUT_PAGE_CONTENT, HOME_CONTENT } from '../constants';
+import SEOHead from '../components/SEOHead';
 
 interface Props {
   lang: Language;
 }
 
 const About: React.FC<Props> = ({ lang }) => {
-  const { hero, story, values, leadership } = ABOUT_PAGE_CONTENT;
+  const { hero, story, values, leadership, meta } = ABOUT_PAGE_CONTENT;
   const { mission, vision } = HOME_CONTENT;
 
   return (
     <div className="flex flex-col">
+      <SEOHead meta={meta} lang={lang} type="article" />
+
       {/* Hero Section */}
       <div className="bg-hewer-blue pt-32 pb-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-hewer-gold/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
@@ -29,8 +32,9 @@ const About: React.FC<Props> = ({ lang }) => {
                 <div>
                      <img 
                         src="https://hewer.iq/wp-content/uploads/2025/01/6.png" 
-                        alt="Our Story" 
+                        alt="Hewer Holding Story - Iraq Industry" 
                         className="rounded-lg shadow-2xl object-cover"
+                        loading="lazy"
                      />
                 </div>
                 <div>
@@ -55,20 +59,20 @@ const About: React.FC<Props> = ({ lang }) => {
       <section className="py-24 bg-hewer-gray">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
              <div className="grid md:grid-cols-2 gap-8">
-                 <div className="bg-white p-10 rounded-xl shadow-lg border-t-4 border-hewer-blue">
+                 <article className="bg-white p-10 rounded-xl shadow-lg border-t-4 border-hewer-blue">
                      <div className="w-16 h-16 bg-hewer-blue/10 text-hewer-blue rounded-full flex items-center justify-center mb-6">
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                      </div>
                      <h3 className="text-2xl font-serif font-bold text-hewer-blue mb-4">{mission.title[lang]}</h3>
                      <p className="text-slate-600 leading-relaxed">{mission.content[lang]}</p>
-                 </div>
-                 <div className="bg-white p-10 rounded-xl shadow-lg border-t-4 border-hewer-gold">
+                 </article>
+                 <article className="bg-white p-10 rounded-xl shadow-lg border-t-4 border-hewer-gold">
                      <div className="w-16 h-16 bg-hewer-gold/10 text-hewer-gold rounded-full flex items-center justify-center mb-6">
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                      </div>
                      <h3 className="text-2xl font-serif font-bold text-hewer-blue mb-4">{vision.title[lang]}</h3>
                      <p className="text-slate-600 leading-relaxed">{vision.content[lang]}</p>
-                 </div>
+                 </article>
              </div>
          </div>
       </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Language, SubsidiaryContent } from '../types';
+import SEOHead from '../components/SEOHead';
 
 interface Props {
   content: SubsidiaryContent;
@@ -7,11 +8,28 @@ interface Props {
 }
 
 const Subsidiary: React.FC<Props> = ({ content, lang }) => {
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": content.name.en,
+    "image": content.logo,
+    "telephone": content.contact.phone,
+    "url": window.location.href,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": content.contact.address.en,
+      "addressCountry": "IQ"
+    }
+  };
+
   return (
     <div className="flex flex-col">
+      <SEOHead meta={content.meta} lang={lang} type="organization" structuredData={localBusinessSchema} />
+
       {/* Hero Banner */}
       <div 
-        className="relative h-[60vh] min-h-[500px] w-full flex items-end parallax-bg"
+        className="relative h-[60vh] min-h-[500px] w-full flex items-end parallax-bg bg-cover bg-center"
         style={{ backgroundImage: `url('${content.heroImage}')` }}
       >
         <div className="absolute inset-0 bg-slate-900/90"></div>
@@ -95,7 +113,7 @@ const Subsidiary: React.FC<Props> = ({ content, lang }) => {
         </div>
 
         {/* Right Column (Sidebar) */}
-        <div className="lg:col-span-4 space-y-8 lg:pt-8">
+        <aside className="lg:col-span-4 space-y-8 lg:pt-8">
             {/* Contact Card */}
             <div className="bg-hewer-blue text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-hewer-gold rounded-full opacity-20 blur-xl"></div>
@@ -104,7 +122,6 @@ const Subsidiary: React.FC<Props> = ({ content, lang }) => {
                 </h3>
                 <div className="space-y-6 relative z-10">
                     
-                    {/* Render specific locations if available, otherwise default single contact */}
                     {content.contact.locations ? (
                         <div className="space-y-8">
                             {content.contact.locations.map((loc, idx) => (
@@ -130,7 +147,6 @@ const Subsidiary: React.FC<Props> = ({ content, lang }) => {
                             ))}
                         </div>
                     ) : (
-                        // Default Single Contact Display
                         <>
                             <div className="flex items-start group">
                                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-4 rtl:mr-0 rtl:ml-4 group-hover:bg-hewer-gold transition-colors">
@@ -202,7 +218,7 @@ const Subsidiary: React.FC<Props> = ({ content, lang }) => {
                 </div>
             )}
 
-        </div>
+        </aside>
       </div>
     </div>
   );

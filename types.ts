@@ -7,6 +7,12 @@ export interface LocalizedString {
   ku: string;
 }
 
+export interface SEOMetadata {
+  title: LocalizedString;
+  description: LocalizedString;
+  keywords: LocalizedString;
+}
+
 export interface NavigationItem {
   label: LocalizedString;
   path?: string;
@@ -25,6 +31,7 @@ export interface SubsidiaryContent {
   shortName: string;
   logo: string;
   description: LocalizedString;
+  meta: SEOMetadata; // Added SEO meta
   mission?: LocalizedString;
   vision?: LocalizedString;
   services: {
@@ -44,6 +51,7 @@ export interface SubsidiaryContent {
 }
 
 export interface HomeContent {
+  meta: SEOMetadata; // Added SEO meta
   hero: {
     title: LocalizedString;
     subtitle: LocalizedString;
@@ -63,6 +71,7 @@ export interface HomeContent {
 }
 
 export interface AboutPageContent {
+  meta: SEOMetadata; // Added SEO meta
   hero: {
     title: LocalizedString;
     subtitle: LocalizedString;
@@ -82,6 +91,7 @@ export interface AboutPageContent {
 }
 
 export interface CompaniesPageContent {
+  meta: SEOMetadata; // Added SEO meta
   hero: {
     title: LocalizedString;
     subtitle: LocalizedString;
@@ -90,6 +100,7 @@ export interface CompaniesPageContent {
 }
 
 export interface ContactPageContent {
+  meta: SEOMetadata; // Added SEO meta
   title: LocalizedString;
   intro: LocalizedString;
 }

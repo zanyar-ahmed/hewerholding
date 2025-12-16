@@ -24,6 +24,23 @@ export const NAV_ITEMS: NavigationItem[] = [
 ];
 
 export const HOME_CONTENT: HomeContent = {
+  meta: {
+    title: {
+      en: 'Hewer Holding Group | Leading Industrial & Energy Investment in Iraq',
+      ar: 'مجموعة هيوَر القابضة | رائدة الاستثمار الصناعي والطاقة في العراق',
+      ku: 'گروپی هێوەر هۆڵدینگ | پێشەنگی وەبەرهێنانی پیشەسازی و وزە لە عێراق'
+    },
+    description: {
+      en: 'Hewer Holding Group drives excellence in Agriculture, Oil & Gas, and Energy. Parent company of LASS, HEWER Oil Services, OPTIMUM Drilling, and XEED.',
+      ar: 'تقود مجموعة هيوَر القابضة التميز في الزراعة والنفط والغاز والطاقة. الشركة الأم لشركات لاس، هيوَر للخدمات النفطية، أوبتيموم للحفر، وإكسيد.',
+      ku: 'گروپی هێوەر هۆڵدینگ باڵایی لە کشتوکاڵ، نەوت و گاز و وزە بەڕێوەدەبات. کۆمپانیای دایکی لاس، خزمەتگوزاری نەوتی هێوەر، هەڵکۆڵینی ئۆپتیمەم و ئێکسید.'
+    },
+    keywords: {
+      en: 'Hewer Holding, Iraq Investment, Oil and Gas Iraq, Agriculture Iraq, Drilling Services Erbil, Industrial Group Baghdad',
+      ar: 'مجموعة هيوَر، استثمار العراق، نفط وغاز العراق، زراعة العراق، خدمات حفر أربيل، مجموعة صناعية بغداد',
+      ku: 'هێوەر هۆڵدینگ، وەبەرهێنانی عێراق، نەوت و گاز عێراق، کشتوکاڵی عێراق، خزمەتگوزاری هەڵکۆڵین هەولێر'
+    }
+  },
   hero: {
     title: {
       en: 'Hewer Holding Group',
@@ -63,6 +80,23 @@ export const HOME_CONTENT: HomeContent = {
 };
 
 export const ABOUT_PAGE_CONTENT: AboutPageContent = {
+  meta: {
+    title: {
+      en: 'About Hewer Holding | Our Story & Leadership',
+      ar: 'عن مجموعة هيوَر | قصتنا وقيادتنا',
+      ku: 'دەربارەی هێوەر هۆڵدینگ | چیرۆک و سەرکردایەتیمان'
+    },
+    description: {
+      en: 'Founded in 2020, Hewer Holding unifies specialized companies to foster growth in Iraq’s industrial sector. Learn about our mission, vision, and leadership.',
+      ar: 'تأسست مجموعة هيوَر في عام 2020 لتوحيد الشركات المتخصصة وتعزيز النمو في القطاع الصناعي في العراق. تعرف على مهمتنا ورؤيتنا وقيادتنا.',
+      ku: 'لە ساڵی 2020 دامەزراوە، هێوەر هۆڵدینگ کۆمپانیا تایبەتمەندەکان یەکدەخات بۆ پەرەپێدانی گەشە لە کەرتی پیشەسازی عێراق. دەربارەی ئەرک، دیدگا و سەرکردایەتیمان بزانە.'
+    },
+    keywords: {
+      en: 'Hewer History, Corporate Governance Iraq, Industrial Leadership Baghdad, Hewer Board of Directors',
+      ar: 'تاريخ هيوَر، حوكمة الشركات العراق، القيادة الصناعية بغداد، مجلس إدارة هيوَر',
+      ku: 'مێژووی هێوەر، حوکمڕانی کۆمپانیاکان عێراق، سەرکردایەتی پیشەسازی بەغدا'
+    }
+  },
   hero: {
     title: { en: 'About Hewer Holding', ar: 'عن مجموعة هيوَر', ku: 'دەربارەی هێوەر' },
     subtitle: { en: 'Building the future through diversified investment and operational excellence.', ar: 'بناء المستقبل من خلال الاستثمار المتنوع والتميز التشغيلي.', ku: 'بونیادنانی داهاتوو لە ڕێگەی وەبەرهێنانی هەمەچەشن و باڵایی کارکردن.' }
@@ -107,6 +141,23 @@ export const ABOUT_PAGE_CONTENT: AboutPageContent = {
 };
 
 export const COMPANIES_PAGE_CONTENT: CompaniesPageContent = {
+  meta: {
+    title: {
+      en: 'Our Companies | LASS, HEWER Oil, OPTIMUM, XEED',
+      ar: 'شركاتنا | لاس، هيوَر للخدمات النفطية، أوبتيموم، إكسيد',
+      ku: 'کۆمپانیاکانمان | لاس، هێوەر بۆ نەوت، ئۆپتیمەم، ئێکسید'
+    },
+    description: {
+      en: 'Explore the Hewer Holding portfolio: LASS Industrial Investment, HEWER Oil Services, OPTIMUM Drilling, and XEED Energy Solutions.',
+      ar: 'اكتشف محفظة مجموعة هيوَر: لاس للاستثمار الصناعي، هيوَر للخدمات النفطية، أوبتيموم للحفر، وإكسيد لحلول الطاقة.',
+      ku: 'پۆرتفۆلیۆی هێوەر هۆڵدینگ ببینە: وەبەرهێنانی پیشەسازی لاس، خزمەتگوزاری نەوتی هێوەر، هەڵکۆڵینی ئۆپتیمەم، و چارەسەری وزەی ئێکسید.'
+    },
+    keywords: {
+      en: 'Hewer Subsidiaries, Iraq Industrial Portfolio, Energy Companies Iraq, Oil Services Providers',
+      ar: 'شركات هيوَر التابعة، محفظة العراق الصناعية، شركات الطاقة العراق، مقدمي خدمات النفط',
+      ku: 'کۆمپانیاکانی هێوەر، پۆرتفۆلیۆی پیشەسازی عێراق، کۆمپانیاکانی وزە عێراق'
+    }
+  },
   hero: {
     title: { en: 'Our Companies', ar: 'شركاتنا', ku: 'کۆمپانیاکانمان' },
     subtitle: { en: 'A synergetic portfolio delivering excellence across sectors.', ar: 'محفظة تآزرية تقدم التميز عبر القطاعات.', ku: 'پۆرتفۆلیۆیەکی هاوبەش کە باڵایی پێشکەش دەکات لە هەموو کەرتەکاندا.' }
@@ -116,6 +167,36 @@ export const COMPANIES_PAGE_CONTENT: CompaniesPageContent = {
     ar: 'توحد مجموعة هيوَر القابضة محفظة من الشركات المتخصصة. تعمل كل جهة باستقلالية مع الاستفادة من الحوكمة المركزية للمجموعة والدعم الاستراتيجي.',
     ku: 'گروپی هێوەر هۆڵدینگ پۆرتفۆلیۆیەک لە کۆمپانیا تایبەتمەندەکان یەکدەخات. هەر قەوارەیەک بە سەربەخۆیی کار دەکات لە کاتێکدا سوود لە حوکمڕانی ناوەندی و پشتگیری ستراتیژی گروپەکە وەردەگرێت.'
   }
+};
+
+export const CONTACT_PAGE: ContactPageContent = {
+  meta: {
+    title: {
+      en: 'Contact Us | Hewer Holding Group',
+      ar: 'اتصل بنا | مجموعة هيوَر القابضة',
+      ku: 'پەیوەندی | گروپی هێوەر هۆڵدینگ'
+    },
+    description: {
+      en: 'Get in touch with Hewer Holding Group and its subsidiaries: LASS, HEWER Oil, OPTIMUM, and XEED. Find contact details for our offices in Iraq and UAE.',
+      ar: 'تواصل مع مجموعة هيوَر القابضة وشركاتها التابعة: لاس، هيوَر للخدمات النفطية، أوبتيموم، وإكسيد. اعثر على تفاصيل الاتصال بمكاتبنا في العراق والإمارات.',
+      ku: 'پەیوەندی بکە بە گروپی هێوەر هۆڵدینگ و کۆمپانیاکانی: لاس، هێوەر، ئۆپتیمەم، و ئێکسید. وردەکاری پەیوەندی نووسینگەکانمان لە عێراق و ئیمارات بدۆزەرەوە.'
+    },
+    keywords: {
+      en: 'Contact Hewer Holding, Hewer Office Baghdad, Oil Services Contact Iraq, Investment Group Email',
+      ar: 'اتصل بمجموعة هيوَر، مكتب هيوَر بغداد، اتصال خدمات النفط العراق، بريد مجموعة الاستثمار',
+      ku: 'پەیوەندی هێوەر هۆڵدینگ، نووسینگەی هێوەر بەغدا، پەیوەندی خزمەتگوزاری نەوت'
+    }
+  },
+  title: {
+    en: 'Contact Us',
+    ar: 'اتصل بنا',
+    ku: 'پەیوەندی',
+  },
+  intro: {
+    en: 'We are here to answer your questions and discuss how our diversified portfolio can serve your needs. Reach out to Hewer Holding or contact our specific subsidiaries directly.',
+    ar: 'نحن هنا للإجابة على أسئلتكم ومناقشة كيف يمكن لمحفظتنا المتنوعة أن تخدم احتياجاتكم. تواصل مع مجموعة هيوَر القابضة أو اتصل بشركاتنا التابعة مباشرة.',
+    ku: 'ئێمە لێرەین بۆ وەڵامدانەوەی پرسیارەکانتان و گفتوگۆکردن لەسەر ئەوەی چۆن پۆرتفۆلیۆ هەمەچەشنەکەمان دەتوانێت خزمەتی پێداویستییەکانتان بکات. پەیوەندی بکەن بە هێوەر هۆڵدینگ یان ڕاستەوخۆ پەیوەندی بە کۆمپانیاکانمانەوە بکەن.',
+  },
 };
 
 export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
@@ -128,7 +209,24 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
     },
     shortName: 'LASS',
     logo: LOGOS.LASS,
-    heroImage: 'https://picsum.photos/id/292/1920/600', // Agriculture themed
+    heroImage: 'https://hewer.iq/wp-content/uploads/2025/12/Dec-14-2025-09_49_12-PM.png',
+    meta: {
+      title: {
+        en: 'LASS Industrial | New Holland Agriculture Distributor Iraq',
+        ar: 'لاس الصناعية | وكيل نيو هولاند الزراعية في العراق',
+        ku: 'لاس بۆ پیشەسازی | بریکاری نیو هۆڵاند بۆ کشتوکاڵ لە عێراق'
+      },
+      description: {
+        en: 'LASS Industrial Investment is the premier distributor of New Holland Agricultural Machinery in Iraq, providing tractors, harvesters, and irrigation systems.',
+        ar: 'تعد شركة لاس للاستثمار الصناعي الموزع الأول لمعدات نيو هولاند الزراعية في العراق، حيث توفر الجرارات والحصادات وأنظمة الري.',
+        ku: 'کۆمپانیای لاس بۆ وەبەرهێنانی پیشەسازی دابینکەری سەرەکی ئامێری کشتوکاڵی نیو هۆڵاندە لە عێراق، کە تراکتۆر، دەراسە و سیستەمی ئاودێری دابین دەکات.'
+      },
+      keywords: {
+        en: 'New Holland Iraq, Agriculture Machinery Baghdad, Erhas Irrigation, Atlantis Irrigation, Tractors Iraq',
+        ar: 'نيو هولاند العراق، آلات زراعية بغداد، ري Erhas، ري Atlantis، جرارات العراق',
+        ku: 'نیو هۆڵاند عێراق، ئامێری کشتوکاڵی بەغدا، ئاودێری Erhas، تراکتۆر عێراق'
+      }
+    },
     description: {
       en: 'LASS Industrial Investment Company is dedicated to revolutionizing farming practices in Iraq through the introduction of modern agricultural machinery and advanced irrigation systems. As the premier distributor of New Holland Agricultural Machinery, LASS provides nationwide coverage across Iraq.',
       ar: 'شركة LASS للاستثمار الصناعي مكرسة لإحداث نقلة نوعية في الممارسات الزراعية في العراق من خلال توفير أحدث الآلات الزراعية وأنظمة الري المتطورة. تُعد LASS الموزع الأول لمعدات New Holland الزراعية في العراق.',
@@ -212,7 +310,24 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
     },
     shortName: 'HEWER',
     logo: LOGOS.HEWER,
-    heroImage: 'https://picsum.photos/id/196/1920/600', // Industrial/Oil themed
+    heroImage: 'https://integratedoilservices.com/wp-content/uploads/2016/08/DSC_0020-scaled.jpg',
+    meta: {
+      title: {
+        en: 'HEWER Oil Services | Integrated Project Management & Drilling Iraq',
+        ar: 'هيوَر للخدمات النفطية | إدارة المشاريع المتكاملة والحفر في العراق',
+        ku: 'خزمەتگوزاری نەوتی هێوەر | بەڕێوەبردنی پڕۆژەی یەکگرتوو و هەڵکۆڵین لە عێراق'
+      },
+      description: {
+        en: 'HEWER Oil Services delivers precision oil and gas solutions in Iraq, including drilling, workover, coiled tubing, and well testing.',
+        ar: 'تقدم شركة هيوَر للخدمات النفطية حلولاً دقيقة للنفط والغاز في العراق، بما في ذلك الحفر، وصيانة الآبار، والأنابيب الملتفة، واختبار الآبار.',
+        ku: 'خزمەتگوزاری نەوتی هێوەر چارەسەری وردی نەوت و گاز لە عێراق پێشکەش دەکات، بە هەڵکۆڵین، چاککردنەوە، بۆری لوولپێچ و پشکنینی بیر.'
+      },
+      keywords: {
+        en: 'Oil Services Baghdad, Drilling Contractors Iraq, Coiled Tubing Services, Well Testing Erbil, Early Production Facilities',
+        ar: 'خدمات نفطية بغداد، مقاولي حفر العراق، خدمات الأنابيب الملتفة، اختبار الآبار أربيل، مرافق الإنتاج المبكر',
+        ku: 'خزمەتگوزاری نەوتی بەغدا، بەڵێندەرانی هەڵکۆڵین عێراق، پشکنینی بیر هەولێر'
+      }
+    },
     description: {
       en: 'HEWER Oil Services was established to meet the evolving needs of the oil and gas industry with precision, efficiency, and operational excellence. Through innovation, advanced technology, and a strategic partnership with OPTIMUM, HEWER delivers reliable solutions aligned with international best practices.',
       ar: 'تأسست شركة HEWER لخدمات النفط لتلبية متطلبات قطاع النفط والغاز بدقة وكفاءة وتميّز تشغيلي. من خلال الابتكار والشراكة الاستراتيجية مع شركة OPTIMUM، تقدم HEWER حلولاً موثوقة وفق أفضل الممارسات العالمية.',
@@ -235,93 +350,148 @@ export const SUBSIDIARIES: Record<string, SubsidiaryContent> = {
         ku: 'مەنسوور، شەقامی ئەمیرات، باڵەخانەی 609، کۆڵانی 13، خانووی 13/2، نزیک باڵیۆزخانەی ئەڵمانیا، بەغدا - عێراق',
       },
       phone: '+964 770 429 0615',
+      locations: [
+        {
+          name: { en: 'Baghdad Office (Headquarter)', ar: 'مكتب بغداد (المقر الرئيسي)', ku: 'نووسینگەی بەغدا (بارەگای سەرەکی)' },
+          address: {
+            en: 'Al-Mansour, Al-Amerat St., Building 609, Alley 13, House 13/2, Near German Embassy, Baghdad – Iraq',
+            ar: 'المنصور، شارع الاميرات، مبنى 609، زقاق 13، منزل 13/2، قرب السفارة الألمانية، بغداد - العراق',
+            ku: 'مەنسوور، شەقامی ئەمیرات، باڵەخانەی 609، کۆڵانی 13، خانووی 13/2، نزیک باڵیۆزخانەی ئەڵمانیا، بەغدا - عێراق'
+          },
+          phone: '+964 770 429 0615'
+        },
+        {
+            name: { en: 'Gazna Branch', ar: 'فرع غزنة', ku: 'لقی غەزنە' },
+            address: { 
+                en: 'Warehouse and Service Centre Gazna Road, Near Erbi Airport Erbil',
+                ar: 'المستودع ومركز الخدمة، طريق غزنة، قرب مطار أربيل',
+                ku: 'کۆگا و سەنتەری خزمەتگوزاری، ڕێگای غەزنە، نزیک فڕۆکەخانەی هەولێر'
+            },
+            phone: '+964 770 623 3131'
+        }
+      ]
     },
-    certifications: ['ISO 9001', 'ISO 14001:2015', 'ISO 45001:2018'],
-    website: 'https://hewer.iq/',
+    website: 'https://hewer.iq',
   },
   optimum: {
     id: 'optimum',
     name: {
-      en: 'OPTIMUM Drilling Services',
-      ar: 'أوبتيموم لخدمات الحفر',
-      ku: 'ئۆپتیمەم بۆ خزمەتگوزاری هەڵکۆڵین',
+      en: 'OPTIMUM Drilling',
+      ar: 'أوبتيموم للحفر',
+      ku: 'ئۆپتیمەم بۆ هەڵکۆڵین',
     },
     shortName: 'OPTIMUM',
     logo: LOGOS.OPTIMUM,
-    heroImage: 'https://picsum.photos/id/119/1920/600', // Industrial/Metal themed
+    heroImage: 'https://hewer.iq/wp-content/uploads/2025/12/ChatGPT-Image-Dec-16-2025-08_03_01-PM.png',
+    meta: {
+      title: {
+        en: 'OPTIMUM Drilling | Advanced Drilling Solutions Iraq',
+        ar: 'أوبتيموم للحفر | حلول حفر متقدمة في العراق',
+        ku: 'ئۆپتیمەم بۆ هەڵکۆڵین | چارەسەری هەڵکۆڵینی پێشکەوتوو لە عێراق'
+      },
+      description: {
+        en: 'OPTIMUM Drilling provides state-of-the-art drilling and workover rigs, ensuring operational efficiency and safety in Iraq’s oil fields.',
+        ar: 'توفر أوبتيموم للحفر أجهزة حفر وصيانة متطورة، مما يضمن الكفاءة التشغيلية والسلامة في حقول النفط في العراق.',
+        ku: 'ئۆپتیمەم بۆ هەڵکۆڵین ئامێری هەڵکۆڵین و چاککردنەوەی پێشکەوتوو دابین دەکات، بۆ مسۆگەرکردنی کارایی و سەلامەتی لە کێڵگە نەوتییەکانی عێراق.'
+      },
+      keywords: {
+        en: 'Drilling Rigs Iraq, Workover Operations, Oil Field Services, Optimum Drilling Erbil',
+        ar: 'أجهزة الحفر العراق، عمليات صيانة الآبار، خدمات حقول النفط، أوبتيموم للحفر أربيل',
+        ku: 'ئامێری هەڵکۆڵین عێراق، کارەکانی چاککردنەوە، خزمەتگوزاری کێڵگەی نەوت'
+      }
+    },
     description: {
-      en: 'OPTIMUM Drilling Services is an international independent oilfield services company providing integrated drilling, workover, completion, and project management solutions. Established in the British Virgin Islands, OPTIMUM serves the Middle East and North Africa with a strong focus on quality, safety, and operational efficiency.',
-      ar: 'شركة OPTIMUM لخدمات الحفر هي شركة دولية مستقلة تقدم حلولاً متكاملة في مجال الحفر وخدمات الآبار وإدارة المشاريع لقطاع النفط والغاز. تخدم الشركة الشرق الأوسط وشمال إفريقيا مع تركيز قوي على الجودة والسلامة.',
-      ku: 'OPTIMUM Drilling Services کۆمپانیایەکی نێودەوڵەتییە لە بواری خزمەتگوزاری نەفت کە چارەسەری درێلینگ، وەرکۆڤەر و بەڕێوەبردنی پڕۆژە پێشکەش دەکات. خزمەتگوزاری پێشکەش دەکات لە ڕۆژهەڵاتی ناوەڕاست و باکووری ئەفریقا.',
+      en: 'OPTIMUM Drilling is a leading provider of drilling and workover services in Iraq. We utilize modern fleets and adhere to strict safety protocols to deliver projects on time and within budget. Our strategic alliance with HEWER Oil Services allows us to offer comprehensive turnkey solutions.',
+      ar: 'تعد أوبتيموم للحفر مزوداً رائداً لخدمات الحفر وصيانة الآبار في العراق. نحن نستخدم أساطيل حديثة ونلتزم ببروتوكولات سلامة صارمة لتسليم المشاريع في الوقت المحدد وضمن الميزانية. تحالفنا الاستراتيجي مع HEWER يسمح لنا بتقديم حلول شاملة.',
+      ku: 'ئۆپتیمەم بۆ هەڵکۆڵین دابینکەری پێشەنگی خزمەتگوزاری هەڵکۆڵین و چاککردنەوەیە لە عێراق. ئێمە کەشتیگەلی مۆدێرن بەکاردەهێنین و پابەندین بە پرۆتۆکۆڵە توندەکانی سەلامەتی بۆ جێبەجێکردنی پڕۆژەکان لە کاتی خۆیدا. هاوپەیمانی ستراتیژیمان لەگەڵ HEWER ڕێگەمان دەدات چارەسەری گشتگیر پێشکەش بکەین.',
     },
     services: {
-      title: { en: 'Key Services', ar: 'الخدمات الرئيسية', ku: 'خزمەتگوزارییە سەرەکییەکان' },
+      title: { en: 'Core Competencies', ar: 'الكفاءات الأساسية', ku: 'توانا بنچینەییەکان' },
       items: [
-        { en: 'Integrated Drilling Services', ar: 'خدمات الحفر المتكاملة', ku: 'خزمەتگوزاری هەڵکۆڵینی یەکگرتوو' },
-        { en: 'Workover Contracted Rigs', ar: 'منصات صيانة الآبار المتعاقد عليها', ku: 'بورجەکانی چاککردنەوەی گرێبەستکراو' },
-        { en: 'Slickline Services', ar: 'خدمات الأسلاك الانزلاقية', ku: 'خزمەتگوزاری وایەری لووس' },
-        { en: 'Equipment Supply', ar: 'تجهيز المعدات', ku: 'دابینکردنی کەلوپەل' },
-        { en: 'Project Management', ar: 'إدارة المشاريع', ku: 'بەڕێوەبردنی پڕۆژە' },
+        { en: 'Drilling Rigs Operations', ar: 'عمليات أجهزة الحفر', ku: 'کارەکانی ئامێری هەڵکۆڵین' },
+        { en: 'Workover Services', ar: 'خدمات صيانة الآبار', ku: 'خزمەتگوزاری چاککردنەوەی بیر' },
+        { en: 'Rig Maintenance', ar: 'صيانة منصات الحفر', ku: 'چاککردنەوەی سەکۆی هەڵکۆڵین' },
+        { en: 'Drilling Engineering', ar: 'هندسة الحفر', ku: 'ئەندازیاری هەڵکۆڵین' },
       ],
     },
     contact: {
       address: {
-        en: 'Baghdad Office: Karrada, Arrasat El-Hendiya, Building No. 437, Baghdad – Iraq',
-        ar: 'مكتب بغداد: الكرادة، عرصات الهندية، مبنى رقم 437، بغداد - العراق',
-        ku: 'نووسینگەی بەغدا: کەرادە، عەرەسات هندییە، باڵەخانەی ژمارە 437، بەغدا - عێراق',
+        en: 'Al-Mansour, Al-Amerat St., Baghdad – Iraq',
+        ar: 'المنصور، شارع الاميرات، بغداد - العراق',
+        ku: 'مەنسوور، شەقامی ئەمیرات، بەغدا - عێراق',
       },
-      phone: '+964 (750) 281-9191',
-      email: 'info@optimum-ops.com',
+      phone: '+964 770 429 0615',
+      locations: [
+        {
+          name: { en: 'Baghdad Office', ar: 'مكتب بغداد', ku: 'نووسینگەی بەغدا' },
+          address: {
+            en: 'Karrada, Arrasat El-Hendiya, Building No. 437, Baghdad – Iraq',
+            ar: 'الكرادة، عرصات الهندية، مبنى رقم 437، بغداد - العراق',
+            ku: 'کەرادە، عەرەسات هندییە، باڵەخانەی ژمارە 437، بەغدا - عێراق',
+          },
+          phone: '+964 (750) 281-9191'
+        },
+        {
+            name: { en: 'Gazna Branch', ar: 'فرع غزنة', ku: 'لقی غەزنە' },
+            address: { 
+                en: 'Warehouse and Service Centre Gazna Road, Near Erbi Airport Erbil',
+                ar: 'المستودع ومركز الخدمة، طريق غزنة، قرب مطار أربيل',
+                ku: 'کۆگا و سەنتەری خزمەتگوزاری، ڕێگای غەزنە، نزیک فڕۆکەخانەی هەولێر'
+            },
+            phone: '+964 770 623 3131'
+        }
+      ]
     },
-    website: 'https://optimum-ops.com/',
+    website: 'https://optimum-ops.com',
   },
   xeed: {
     id: 'xeed',
     name: {
-      en: 'XEED Energy Solutions',
-      ar: 'إكسيد لحلول الطاقة',
-      ku: 'ئێکسید بۆ چارەسەری وزە',
+      en: 'XEED Energy',
+      ar: 'إكسيد للطاقة',
+      ku: 'ئێکسید بۆ وزە',
     },
     shortName: 'XEED',
     logo: LOGOS.XEED,
-    heroImage: 'https://picsum.photos/id/515/1920/600', // Tech/Energy themed
+    heroImage: 'https://hewer.iq/wp-content/uploads/2025/12/unnamed.webp',
+    meta: {
+      title: {
+        en: 'XEED Energy | Sustainable Power & Energy Solutions',
+        ar: 'إكسيد للطاقة | حلول الطاقة المستدامة',
+        ku: 'ئێکسید بۆ وزە | چارەسەری وزەی بەردەوام'
+      },
+      description: {
+        en: 'XEED Energy specializes in providing innovative power generation and energy management solutions, supporting Iraq’s infrastructure and industrial growth.',
+        ar: 'تتخصص إكسيد للطاقة في تقديم حلول مبتكرة لتوليد الطاقة وإدارة الطاقة، مما يدعم البنية التحتية والنمو الصناعي في العراق.',
+        ku: 'ئێکسید بۆ وزە تایبەتمەندە لە دابینکردنی چارەسەری داهێنەرانەی بەرهەمهێنانی وزە و بەڕێوەبردنی وزە، پشتگیری ژێرخان و گەشەی پیشەسازی عێراق دەکات.'
+      },
+      keywords: {
+        en: 'Energy Solutions Iraq, Power Generation Baghdad, Renewable Energy Iraq, Industrial Power',
+        ar: 'حلول الطاقة العراق، توليد الطاقة بغداد، الطاقة المتجددة العراق، الطاقة الصناعية',
+        ku: 'چارەسەری وزە عێراق، بەرهەمهێنانی وزە بەغدا، وزەی نوێبووەوە عێراق'
+      }
+    },
     description: {
-      en: 'A dynamic organization that specializes in providing energy solutions with an innovative approach. Our scope of services is focused on Surface Well Testing, Early Production Facilities & Carbon Footprint Reduction solutions. We are committed to empowering clients with unparalleled data accuracy, integrity, and operational efficiency.',
-      ar: 'منظمة ديناميكية متخصصة في توفير حلول الطاقة بنهج مبتكر. يركز نطاق خدماتنا على اختبار الآبار السطحية، ومرافق الإنتاج المبكر، وحلول تقليل البصمة الكربونية. نحن ملتزمون بتمكين العملاء من خلال دقة البيانات التي لا مثيل لها والنزاهة والكفاءة التشغيلية.',
-      ku: 'ڕێکخراوێکی چالاکە کە تایبەتمەندە بە دابینکردنی چارەسەری وزە بە شێوازێکی داهێنەرانە. مەودای خزمەتگوزارییەکانمان تەرخانکراوە بۆ پشکنینی بیری سەر ڕووی زەوی، دامەزراوەکانی بەرهەمهێنانی پێشوەختە و چارەسەری کەمکردنەوەی شوێنپێی کاربۆن.',
+      en: 'XEED Energy is committed to powering Iraq’s future through sustainable and efficient energy solutions. From traditional power generation to emerging renewable technologies, XEED provides the expertise and infrastructure necessary to support large-scale industrial projects and community development.',
+      ar: 'تلتزم إكسيد للطاقة بتزويد مستقبل العراق بالطاقة من خلال حلول طاقة مستدامة وفعالة. من توليد الطاقة التقليدية إلى تقنيات الطاقة المتجددة الناشئة، توفر XEED الخبرة والبنية التحتية اللازمة لدعم المشاريع الصناعية واسعة النطاق وتنمية المجتمع.',
+      ku: 'ئێکسید بۆ وزە پابەندە بە دابینکردنی وزە بۆ داهاتووی عێراق لە ڕێگەی چارەسەری وزەی بەردەوام و کارا. لە بەرهەمهێنانی وزەی تەقلیدییەوە بۆ تەکنەلۆژیا نوێیەکانی وزەی نوێبووەوە، XEED شارەزایی و ژێرخانی پێویست دابین دەکات بۆ پشتگیری پڕۆژە پیشەسازییە گەورەکان.',
     },
     services: {
-      title: { en: 'Solutions & Services', ar: 'الحلول والخدمات', ku: 'چارەسەر و خزمەتگوزارییەکان' },
+      title: { en: 'Energy Services', ar: 'خدمات الطاقة', ku: 'خزمەتگوزارییەکانی وزە' },
       items: [
-        { en: 'Surface Well Testing', ar: 'اختبار الآبار السطحية', ku: 'پشکنینی بیری سەر ڕووی زەوی' },
-        { en: 'Early Production Facilities', ar: 'مرافق الإنتاج المبكر', ku: 'دامەزراوەکانی بەرهەمهێنانی پێشوەختە' },
-        { en: 'Carbon Footprint Reduction', ar: 'تقليل البصمة الكربونية', ku: 'کەمکردنەوەی شوێنپێی کاربۆن' },
-        { en: 'Operational Efficiency Optimization', ar: 'تحسين الكفاءة التشغيلية', ku: 'باشترکردنی کارایی بەگەڕخستن' },
-        { en: 'Data Accuracy & Integrity', ar: 'دقة وسلامة البيانات', ku: 'وردی و دروستی داتاکان' },
+        { en: 'Power Generation', ar: 'توليد الطاقة', ku: 'بەرهەمهێنانی وزە' },
+        { en: 'Energy Infrastructure', ar: 'البنية التحتية للطاقة', ku: 'ژێرخانی وزە' },
+        { en: 'Consultancy Services', ar: 'الخدمات الاستشارية', ku: 'خزمەتگوزاری ڕاوێژکاری' },
       ],
     },
     contact: {
       address: {
-        en: 'PO Box: 6084, Abu Dhabi, United Arab Emirates',
-        ar: 'صندوق البريد: 6084، أبو ظبي، الإمارات العربية المتحدة',
-        ku: 'سندوقی پۆست: 6084، ئەبوزەبی، ئیماراتی یەکگرتووی عەرەبی',
+        en: 'Baghdad, Iraq',
+        ar: 'بغداد، العراق',
+        ku: 'بەغدا، عێراق',
       },
-      phone: '+971 2 491 4283',
-      email: 'info@xeed.ae',
+      phone: '+964 780 000 0000',
     },
-    website: 'https://www.xeed.ae/',
-  },
-};
-
-export const CONTACT_PAGE: ContactPageContent = {
-  title: {
-    en: 'Contact Us',
-    ar: 'اتصل بنا',
-    ku: 'پەیوەندیمان پێوە بکەن',
-  },
-  intro: {
-    en: 'Get in touch with our headquarters or one of our specialized subsidiaries.',
-    ar: 'تواصل مع مقرنا الرئيسي أو إحدى شركاتنا التابعة المتخصصة.',
-    ku: 'پەیوەندی بکە بە بارەگای سەرەکیمان یان یەکێک لە کۆمپانیا تایبەتمەندەکانمان.',
+    website: 'https://www.xeed.ae',
   },
 };

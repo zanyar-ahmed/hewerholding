@@ -1,14 +1,19 @@
 import React from 'react';
 import { Language } from '../types';
 import { CONTACT_PAGE, SUBSIDIARIES } from '../constants';
+import SEOHead from '../components/SEOHead';
 
 interface Props {
   lang: Language;
 }
 
 const Contact: React.FC<Props> = ({ lang }) => {
+  const { meta } = CONTACT_PAGE;
+
   return (
     <div className="bg-slate-50 min-h-screen pt-16">
+      <SEOHead meta={meta} lang={lang} />
+      
       <div className="bg-hewer-blue py-24 text-center relative overflow-hidden">
          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
          <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -33,28 +38,58 @@ const Contact: React.FC<Props> = ({ lang }) => {
                     </div>
                     <h3 className="text-xl font-serif font-bold text-hewer-blue mb-6">{sub.name[lang]}</h3>
                     <div className="space-y-5 text-slate-600 text-sm flex-1">
-                       <div className="flex items-start">
-                            <div className="w-8 h-8 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            </div>
-                            <div>
-                                <span className="font-bold block text-hewer-blue mb-1">{lang === 'en' ? 'Address:' : lang === 'ar' ? 'العنوان:' : 'ناونیشان:'}</span>
-                                <span className="leading-relaxed block">{sub.contact.address[lang]}</span>
-                            </div>
-                       </div>
                        
-                       <div className="flex items-start">
-                            <div className="w-8 h-8 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3">
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                            </div>
-                            <div>
-                                <span className="font-bold block text-hewer-blue mb-1">{lang === 'en' ? 'Phone:' : lang === 'ar' ? 'هاتف:' : 'مۆبایل:'}</span>
-                                <span dir="ltr" className="block">{sub.contact.phone}</span>
-                            </div>
-                       </div>
+                       {/* Render Locations List if available (e.g. LASS), otherwise generic address */}
+                       {sub.contact.locations && sub.contact.locations.length > 0 ? (
+                           <div className="space-y-6">
+                               {sub.contact.locations.map((loc, idx) => (
+                                   <div key={idx} className={`${idx !== 0 ? 'border-t border-slate-100 pt-4' : ''}`}>
+                                       <h4 className="font-bold text-hewer-gold mb-2 text-xs uppercase tracking-wide">{loc.name[lang]}</h4>
+                                       
+                                       <div className="flex items-start mb-2">
+                                            <div className="w-6 h-6 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3 mt-0.5">
+                                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                            </div>
+                                            <span className="leading-relaxed text-xs">{loc.address[lang]}</span>
+                                       </div>
+                                       
+                                       {loc.phone && (
+                                            <div className="flex items-start">
+                                                <div className="w-6 h-6 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3 mt-0.5">
+                                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                                </div>
+                                                <span dir="ltr" className="block text-xs font-semibold">{loc.phone}</span>
+                                            </div>
+                                       )}
+                                   </div>
+                               ))}
+                           </div>
+                       ) : (
+                           <>
+                               <div className="flex items-start">
+                                    <div className="w-8 h-8 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3">
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                    </div>
+                                    <div>
+                                        <span className="font-bold block text-hewer-blue mb-1">{lang === 'en' ? 'Address:' : lang === 'ar' ? 'العنوان:' : 'ناونیشان:'}</span>
+                                        <span className="leading-relaxed block">{sub.contact.address[lang]}</span>
+                                    </div>
+                               </div>
+                               
+                               <div className="flex items-start">
+                                    <div className="w-8 h-8 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3">
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    </div>
+                                    <div>
+                                        <span className="font-bold block text-hewer-blue mb-1">{lang === 'en' ? 'Phone:' : lang === 'ar' ? 'هاتف:' : 'مۆبایل:'}</span>
+                                        <span dir="ltr" className="block">{sub.contact.phone}</span>
+                                    </div>
+                               </div>
+                           </>
+                       )}
 
                        {sub.contact.email && (
-                            <div className="flex items-start">
+                            <div className={`flex items-start ${sub.contact.locations ? 'border-t border-slate-100 pt-4 mt-4' : ''}`}>
                                 <div className="w-8 h-8 rounded bg-hewer-gold/10 text-hewer-gold flex items-center justify-center flex-shrink-0 mr-3 rtl:mr-0 rtl:ml-3">
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                 </div>

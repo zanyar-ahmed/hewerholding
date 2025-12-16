@@ -2,16 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Language } from '../types';
 import { HOME_CONTENT, SUBSIDIARIES } from '../constants';
+import SEOHead from '../components/SEOHead';
 
 interface Props {
   lang: Language;
 }
 
 const Home: React.FC<Props> = ({ lang }) => {
-  const { hero, about } = HOME_CONTENT;
+  const { hero, about, meta } = HOME_CONTENT;
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hewer Holding Group",
+    "url": "https://hewer.iq",
+    "logo": "https://hewer.iq/wp-content/uploads/2021/10/ChatGPT-Image-Dec-3-2025-01_42_06-PM.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+964-770-429-0615",
+      "contactType": "customer service",
+      "areaServed": ["IQ", "AE"],
+      "availableLanguage": ["en", "ar", "ku"]
+    },
+    "sameAs": [
+        "https://www.linkedin.com/company/hewer-holding"
+    ]
+  };
 
   return (
     <div className="flex flex-col">
+      <SEOHead meta={meta} lang={lang} type="website" structuredData={orgSchema} />
+      
       {/* Hero Section with Video Background */}
       <div className="relative h-screen min-h-[600px] w-full flex items-center justify-center overflow-hidden bg-hewer-blue">
         
@@ -97,11 +118,9 @@ const Home: React.FC<Props> = ({ lang }) => {
             
             <div className="relative">
               <div className="aspect-[4/5] bg-slate-200 rounded-lg overflow-hidden shadow-2xl relative z-10">
-                 {/* Updated image to the specific URL requested by the user */}
-                 <img src="https://hewer.iq/wp-content/uploads/2025/12/ChatGPT-Image-Dec-13-2025-09_57_14-AM.png" alt="Industrial Excellence" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                 <img src="https://hewer.iq/wp-content/uploads/2025/12/ChatGPT-Image-Dec-13-2025-09_57_14-AM.png" alt="Hewer Holding Industrial Excellence in Iraq" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
                  <div className="absolute inset-0 bg-hewer-blue/10"></div>
               </div>
-              {/* Decorative elements */}
               <div className="absolute -bottom-10 -left-10 w-full h-full border-2 border-hewer-gold/20 rounded-lg z-0 hidden lg:block"></div>
             </div>
           </div>
@@ -124,13 +143,11 @@ const Home: React.FC<Props> = ({ lang }) => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {Object.values(SUBSIDIARIES).map((sub) => (
               <Link key={sub.id} to={`/${sub.id}`} className="group relative flex flex-col h-full bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-slate-100 overflow-hidden">
-                {/* Image Area */}
                 <div className="h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 border-b border-slate-100">
                    <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors duration-300"></div>
-                   <img src={sub.logo} alt={sub.name[lang]} className="max-w-full max-h-full object-contain transform group-hover:scale-105 transition-transform duration-500" />
+                   <img src={sub.logo} alt={`${sub.name[lang]} Logo`} className="max-w-full max-h-full object-contain transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
                 
-                {/* Content Area */}
                 <div className="flex-1 p-6 flex flex-col">
                   <div className="mb-2">
                     <span className="text-xs font-bold text-hewer-gold uppercase tracking-wider">{sub.shortName}</span>

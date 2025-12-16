@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,9 +11,9 @@ import { SUBSIDIARIES } from './constants';
 
 // Helper component to scroll to top on route change
 const ScrollToTop = () => {
-  const { pathname } = React.useMemo(() => new URL(window.location.href), []);
+  const { pathname } = useLocation();
   
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
