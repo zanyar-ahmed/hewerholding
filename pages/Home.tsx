@@ -53,8 +53,7 @@ const Home: React.FC<Props> = ({ lang }) => {
                 playsInline
                 poster="https://images.unsplash.com/photo-1622630325950-c65181768b55?q=80&w=2000&auto=format&fit=crop"
             >
-                {/* Pexels Free Stock Video: Combine Harvester / Agriculture Theme */}
-                <source src="https://videos.pexels.com/video-files/2883072/2883072-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                <source src="https://hewer.iq/wp-content/uploads/2025/12/d1c6a9c7-f0ce-4858-8260-e069ef0d6067.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
